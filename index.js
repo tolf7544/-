@@ -13,7 +13,7 @@ function weekCount(dt) {
 	return new Promise((resolve, reject) => {
 
 		try {
-			var theFirstDay = new Date(dt.getFullYear(),  dt.getUTCMonth()-2, 2);
+			var theFirstDay = new Date(dt.getFullYear(),  dt.getUTCMonth(), 2);
 			var theLastDayOfMonth = new Date(dt.getFullYear(), dt.getUTCMonth()-1, 1);
 
 			var theLastDayOfWeek = new Date(dt.getFullYear(), dt.getMonth() - 1, 1);
